@@ -7,9 +7,11 @@ Uses custom format of
 ## Changed
 - Renamed `elements.js` file to `strings.js` file
   - This is because it will mainly be for things like `paragraphs` and `footers`, things that have to do with strings
+- Simplified `createParagraph` function to use the new `createString` function
 ## Added
 - `library` folder for things only related to library info. like `global.js` for global files
 - `global.js` for global constant variables
+- `createString` function to simplify creating different types of string elements
 ## Fixed
 - `v1.0.0` Changelog
 
