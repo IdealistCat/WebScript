@@ -15,5 +15,5 @@ export function createHeader(headerNum=1, {content="",id=""}) {
     if (headnum > 6) headnum = 6;
     if (headnum < 1) headnum = 1;
 
-    return createString(headnum.toString(), {content, id});
+    return createString(`h${headnum.toString()}`, {content, id});
 }
