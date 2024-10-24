@@ -1,5 +1,5 @@
 export function createString(type="p", {content="",id=""}){
-    let paragraph = document.createElement('p');
+    let paragraph = document.createElement(type);
 
     paragraph.innerHTML = content;
     paragraph.id = id;
