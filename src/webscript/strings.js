@@ -7,7 +7,7 @@ export function createString(type="p", {content="",id=""}){
     return paragraph;
 }
 
-export function createParagraph({content="",id=""}) { return createString('P', {content, id}); }
+export function createParagraph({content="",id=""}) { return createString('p', {content, id}); }
 
 export function createHeader(headerNum=1, {content="",id=""}) {
     var headnum = headerNum;
