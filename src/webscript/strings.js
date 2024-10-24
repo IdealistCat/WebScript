@@ -7,4 +7,13 @@ export function createString(type="p", {content="",id=""}){
     return paragraph;
 }
 
-export function createParagraph({content="",id=""}) { return createString({content, id}); }
+export function createParagraph({content="",id=""}) { return createString('P', {content, id}); }
+
+export function createHeader(headerNum=1, {content="",id=""}) {
+    var headnum = headerNum;
+
+    if (headnum > 6) headnum = 6;
+    if (headnum < 1) headnum = 1;
+
+    return createString(headnum.toString(), {content, id});
+}
