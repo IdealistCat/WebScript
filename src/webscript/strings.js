@@ -1,4 +1,4 @@
-export function createParagraph({content="",id=""}){
+export function createString(type="p", {content="",id=""}){
     let paragraph = document.createElement('p');
 
     paragraph.innerHTML = content;
@@ -6,3 +6,5 @@ export function createParagraph({content="",id=""}){
 
     return paragraph;
 }
+
+export function createParagraph({content="",id=""}) { return createString({content, id}); }
