@@ -1,0 +1,1 @@
+export function createParagraph({content="",id=""}) {}
